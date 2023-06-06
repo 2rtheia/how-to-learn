@@ -1,12 +1,31 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 .logo {
@@ -24,7 +43,8 @@
   min-height: 600px;
   max-height: 756px;
   position: relative;
-  /* выше установили ограничения для секции */
+  display: flex;
+  background-color: #f2f2f2;
 }
 
 .header__square-pic {
@@ -34,7 +54,7 @@
   position: absolute;
   right: 0;
   top: 64px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .header__title {
@@ -42,10 +62,6 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
   margin: auto 0 auto 64px;
 } 
 
@@ -66,13 +82,147 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1;
 }
 
-
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
+
+.two-columns {
+  display: flex;
+  margin: 100px auto 0 auto;
+  width: 80%;
+  justify-content: space-between;
+  min-height: 200px;
+  gap: 100px;
+  margin-bottom: 0;
+}
+
+.two-columns-brief-name {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  width: 175px;
+}
+
+.two-columns__paragraph {
+  min-width: 784px;
+  width: 80%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__conclusion {
+  margin: 30px 0 30px 0;
+}
+
+.two-columns__span-accent {
+  font-weight: 600;
+}
+
+.two-columns__paragraph-1st-text {
+  width: 1010px;
+}
+
+.selection-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 100px auto 0 auto;
+  width: 60%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.selection-subtitle {
+ line-height: 34px;
+ font-size: 24px;
+ font-weight: normal;
+ width: 60%;
+ text-align: center;
+ margin: 20px auto 0 auto;
+}
+
+.all-tables {
+  display: flex;
+  width: 1100px;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 60px 83px;
+  justify-content: center;
+  margin: auto  
+}
+
+.table {
+  margin-top: 60px;
+}
+
+.table__cell_heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  width: 250px;
+}
+
+.table__cell-text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  width: 250px;
+}
+
+.table__cell-subtext {
+  margin-top: 20px;
+  width: 250px;
+}
+
+.feynman {
+  margin-top: 100px;
+  height: 890px;
+  position: relative;
+  background-color: #f2f2f2;
+  z-index: -2;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  width: 648px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.feynman__details {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  right: 48px;  
+}
+
+.feynman__img {
+  width: 867 px;
+  height: 637px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1
+}
+
