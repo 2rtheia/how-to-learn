@@ -1,3 +1,17 @@
+@keyframes spin {
+  from {
+    transform: rotate(-15deg);
+  }
+
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+.spin {
+  animation: spin 60s linear;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -297,6 +311,8 @@ h1 {
   top: 0;
   position: absolute;
   z-index: -1;
+  background-image: url("../images/kaufman-triangle.svg");
+  background-size: cover; 
 } 
 
 .footer  {
